@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo de Fundo</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: black;
+        }
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            pointer-events: none; /* Impede interações com o vídeo */
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop playsinline>
+        <source src="https://drive.google.com/uc?export=download&id=1cxibeiF5JYo8_GYVvGtbQt2_2NPu2nbp" type="video/mp4">
+        Seu navegador não suporta vídeos.
+    </video>
+</body>
+</html>
